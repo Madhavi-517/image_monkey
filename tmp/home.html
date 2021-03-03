@@ -1,0 +1,19 @@
+<html>
+<head>
+<h1> Image Classification </h1>
+</head>
+<body>
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+        <label>Upload Image:</label>
+        <input type="file" name="image" required/>
+        <button type="submit">predict</button> 
+    </form>
+    {% if prediction %}
+    {{ path }}
+  <img src="{{ path }}" height="500px" width="500px">
+	<h2> Your Prediction: <i> {{ prediction }} </i></h2>
+
+	{% endif %}
+ 
+</body>
+</html>
