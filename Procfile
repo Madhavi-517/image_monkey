@@ -1,1 +1,1 @@
-web: gunicorn  image_classification_flask:app
+web:gunicorn image_classification_flask:app
