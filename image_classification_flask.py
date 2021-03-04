@@ -32,7 +32,7 @@ def preprocessingImg(image_path):
 
 
 @app.route('/',methods=['GET'])
-def home():
+def home(debug=True):
     return render_template('home.html')
 
 
