@@ -17,7 +17,7 @@ classes={0:'malted _hawler',1:'patas_monkey',2:'bald_uakari',3:'japanese_macaque
          7:'common_squirrel_monkey',8:'black_headed_night_monkey',9:'nilgiri_langur'}
 
 
-model=load_model('image-xception.hdf5')
+model=load_model('E:/image_classification/image-xception.hdf5')
     
 def preprocessingImg(image_path):
     test_image=image.load_img(image_path,target_size=(299,299))
